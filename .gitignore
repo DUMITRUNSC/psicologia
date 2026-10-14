@@ -1,0 +1,4 @@
+.DS_Store
+.openai/
+_backup_antes_cambios/
+node_modules/

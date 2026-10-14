@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f3f5f1">
+  <meta name="description" content="Plataforma privada de preparación del examen de Psicología de la Comunicación.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2216%22 fill=%22%231d211e%22/><text x=%2232%22 y=%2245%22 text-anchor=%22middle%22 font-size=%2242%22 fill=%22%23f5f2eb%22>ψ</text></svg>">
+  <title>Psico · Preparación de examen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegación principal">
+      <button class="brand" data-view="home" aria-label="Ir al inicio"><span class="brand-mark">ψ</span><span class="brand-name">Psico</span></button>
+      <nav id="side-nav">
+        <button class="nav-item active" data-view="home"><span>⌂</span><small>Inicio</small></button>
+        <button class="nav-item" data-view="learn"><span>◉</span><small>Preguntas</small></button>
+        <button class="nav-item" data-view="exam"><span>✓</span><small>Examen</small></button>
+        <button class="nav-item" data-view="notes"><span>▤</span><small>Apuntes</small></button>
+        <button class="nav-item" data-view="progress"><span>◎</span><small>Progreso</small></button>
+      </nav>
+      <div class="source-note" title="58 de 58 páginas verificadas"><span class="source-dot"></span><strong>58</strong></div>
+    </aside>
+    <main id="main" tabindex="-1"></main>
+    <nav class="mobile-nav" aria-label="Navegación móvil">
+      <button data-view="home" class="active"><span>⌂</span>Inicio</button>
+      <button data-view="learn"><span>◉</span>Preguntas</button>
+      <button data-view="exam"><span>✓</span>Examen</button>
+      <button data-view="notes"><span>▤</span>Apuntes</button>
+      <button data-view="progress"><span>◎</span>Progreso</button>
+    </nav>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="pages.js"></script>
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
