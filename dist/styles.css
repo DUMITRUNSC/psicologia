@@ -157,6 +157,9 @@ main{margin-left:82px;padding:28px clamp(25px,3.5vw,52px) 84px}.page{max-width:1
 .paper-kicker { display: inline-flex; align-items: center; gap: 7px; }
 .paper-kicker::before { content: ""; display: inline-block; width: 14px; height: 3px; border-radius: 2px; background: var(--note-accent); flex: none; }
 
+/* Hide the first chapter label in content — it duplicates the paper header title */
+.page-text.structured > .note-chapter:first-child { display: none !important; }
+
 /* ============================================================
    FEEDBACK REDESIGN — prominent correct answer
    ============================================================ */
